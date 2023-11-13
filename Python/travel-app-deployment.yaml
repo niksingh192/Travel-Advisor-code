@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: travel-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: travel-app
+  template:
+    metadata:
+      labels:
+        app: travel-app
+    spec:
+      containers:
+      - name: travel-app
+        image: travel-advisor-app:latest
+        ports:
+        - containerPort: 8080
