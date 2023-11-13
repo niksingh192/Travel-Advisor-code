@@ -17,7 +17,7 @@ if __name__ == "__main__":
     import sys
     
     if len(sys.argv) != 2:
-        print("Usage: python check_country.py COUNTRY_CODE")
+        print("Usage: python travel-advisor.py COUNTRY_CODE")
         sys.exit(1)
     
     country_code = sys.argv[1]
