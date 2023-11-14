@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+from werkzeug.utils import url_quote
 import requests
 app = Flask(__name__)
 API_ENDPOINT = "https://www.travel-advisory.info/api"
